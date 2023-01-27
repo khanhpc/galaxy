@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html onclick="play()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️❤️KHANH❤️❤️</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="buttons-column">
+        <div class="label views-label">Khanh's View:</div>
+        <ul class="buttons-list">
+            <li class="button active-button" id="main-button">Sun</li>
+            <li class="button" id="mercury-button">Mercury</li>
+            <li class="button" id="venus-button">Venus</li>
+            <li class="button" id="earth-button">Earth</li>
+            <li class="button" id="mars-button">Mars</li>
+            <li class="button" id="jupiter-button">Jupiter</li>
+            <li class="button" id="saturn-button">Saturn</li>
+            <li class="button" id="uranus-button">Uranus</li>
+            <li class="button" id="neptune-button">Neptune</li>
+        </ul>
+
+        <div class="label lines-label">Visibility:</div>
+        <ul class="buttons-list">
+            <li class="button hidden" id="lines-button">Orbit Lines</li>
+        </ul>
+    </div>
+    <audio id="audio" src="./music/cobemuadong.mp3"></audio>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        };
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
